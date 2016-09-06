@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290E39C11D7F15D20086F77E /* UIView+LLCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E39C01D7F15D20086F77E /* UIView+LLCExtension.m */; };
 		2A7E93431D7EE13100C5B9D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E93421D7EE13100C5B9D4 /* main.m */; };
 		2A7E93461D7EE13100C5B9D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E93451D7EE13100C5B9D4 /* AppDelegate.m */; };
 		2A7E934E1D7EE13100C5B9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E934D1D7EE13100C5B9D4 /* Assets.xcassets */; };
@@ -36,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		2704ED2D573B5BB3692D8A1F /* Pods-LLC_XIACHUFANG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLC_XIACHUFANG.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLC_XIACHUFANG/Pods-LLC_XIACHUFANG.release.xcconfig"; sourceTree = "<group>"; };
+		290E39BF1D7F15D20086F77E /* UIView+LLCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LLCExtension.h"; sourceTree = "<group>"; };
+		290E39C01D7F15D20086F77E /* UIView+LLCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LLCExtension.m"; sourceTree = "<group>"; };
 		2A7E933E1D7EE13100C5B9D4 /* LLC_XIACHUFANG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLC_XIACHUFANG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7E93421D7EE13100C5B9D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A7E93441D7EE13100C5B9D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,14 +126,14 @@
 		2A7E93401D7EE13100C5B9D4 /* LLC_XIACHUFANG */ = {
 			isa = PBXGroup;
 			children = (
-				2A7E93741D7EE1AE00C5B9D4 /* Extensions */,
+				2A7E937A1D7EE1AE00C5B9D4 /* SDK */,
 				2A7E93751D7EE1AE00C5B9D4 /* Frameworks */,
+				2A7E93741D7EE1AE00C5B9D4 /* Extensions */,
 				2A7E93761D7EE1AE00C5B9D4 /* Global */,
-				2A7E93771D7EE1AE00C5B9D4 /* Model */,
+				2A7E937B1D7EE1AE00C5B9D4 /* Tools */,
 				2A7E93781D7EE1AE00C5B9D4 /* Module */,
 				2A7E93791D7EE1AE00C5B9D4 /* Operation */,
-				2A7E937A1D7EE1AE00C5B9D4 /* SDK */,
-				2A7E937B1D7EE1AE00C5B9D4 /* Tools */,
+				2A7E93771D7EE1AE00C5B9D4 /* Model */,
 				2A7E937C1D7EE1AE00C5B9D4 /* View */,
 				2A7E938B1D7EE24600C5B9D4 /* ViewControllers */,
 				2A7E93441D7EE13100C5B9D4 /* AppDelegate.h */,
@@ -172,6 +175,8 @@
 		2A7E93741D7EE1AE00C5B9D4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				290E39BF1D7F15D20086F77E /* UIView+LLCExtension.h */,
+				290E39C01D7F15D20086F77E /* UIView+LLCExtension.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -566,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290E39C11D7F15D20086F77E /* UIView+LLCExtension.m in Sources */,
 				2A7E93461D7EE13100C5B9D4 /* AppDelegate.m in Sources */,
 				2A7E93431D7EE13100C5B9D4 /* main.m in Sources */,
 				2A7E93A01D7EE28C00C5B9D4 /* LLCHomeViewController.m in Sources */,
