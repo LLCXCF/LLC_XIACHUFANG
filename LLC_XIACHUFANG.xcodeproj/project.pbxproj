@@ -14,6 +14,7 @@
 		2A7E935C1D7EE13100C5B9D4 /* LLC_XIACHUFANGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E935B1D7EE13100C5B9D4 /* LLC_XIACHUFANGTests.m */; };
 		2A7E93671D7EE13200C5B9D4 /* LLC_XIACHUFANGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E93661D7EE13200C5B9D4 /* LLC_XIACHUFANGUITests.m */; };
 		2A7E93A01D7EE28C00C5B9D4 /* LLCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E939F1D7EE28C00C5B9D4 /* LLCHomeViewController.m */; };
+		BDDA43685E9391B286D0D662 /* libPods-LLC_XIACHUFANG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 683DE626F28A421894D941C1 /* libPods-LLC_XIACHUFANG.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2704ED2D573B5BB3692D8A1F /* Pods-LLC_XIACHUFANG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLC_XIACHUFANG.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLC_XIACHUFANG/Pods-LLC_XIACHUFANG.release.xcconfig"; sourceTree = "<group>"; };
 		2A7E933E1D7EE13100C5B9D4 /* LLC_XIACHUFANG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLC_XIACHUFANG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7E93421D7EE13100C5B9D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A7E93441D7EE13100C5B9D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		2A7E93681D7EE13200C5B9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A7E939E1D7EE28C00C5B9D4 /* LLCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCHomeViewController.h; sourceTree = "<group>"; };
 		2A7E939F1D7EE28C00C5B9D4 /* LLCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCHomeViewController.m; sourceTree = "<group>"; };
+		683DE626F28A421894D941C1 /* libPods-LLC_XIACHUFANG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLC_XIACHUFANG.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EACB2CC568002C618647A770 /* Pods-LLC_XIACHUFANG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLC_XIACHUFANG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLC_XIACHUFANG/Pods-LLC_XIACHUFANG.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDA43685E9391B286D0D662 /* libPods-LLC_XIACHUFANG.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14F470A05FE8C8BC912BCC97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EACB2CC568002C618647A770 /* Pods-LLC_XIACHUFANG.debug.xcconfig */,
+				2704ED2D573B5BB3692D8A1F /* Pods-LLC_XIACHUFANG.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2573668D5C7F728DCE19A66B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				683DE626F28A421894D941C1 /* libPods-LLC_XIACHUFANG.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2A7E93351D7EE13100C5B9D4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				2A7E935A1D7EE13100C5B9D4 /* LLC_XIACHUFANGTests */,
 				2A7E93651D7EE13200C5B9D4 /* LLC_XIACHUFANGUITests */,
 				2A7E933F1D7EE13100C5B9D4 /* Products */,
+				14F470A05FE8C8BC912BCC97 /* Pods */,
+				2573668D5C7F728DCE19A66B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -368,9 +392,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A7E936B1D7EE13200C5B9D4 /* Build configuration list for PBXNativeTarget "LLC_XIACHUFANG" */;
 			buildPhases = (
+				E7F4C0215F167E19CB86B621 /* [CP] Check Pods Manifest.lock */,
 				2A7E933A1D7EE13100C5B9D4 /* Sources */,
 				2A7E933B1D7EE13100C5B9D4 /* Frameworks */,
 				2A7E933C1D7EE13100C5B9D4 /* Resources */,
+				139E248F77D7C9BCD108CF8B /* [CP] Embed Pods Frameworks */,
+				A04F2B46D7F067A470D8A6F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -485,6 +512,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		139E248F77D7C9BCD108CF8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLC_XIACHUFANG/Pods-LLC_XIACHUFANG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A04F2B46D7F067A470D8A6F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLC_XIACHUFANG/Pods-LLC_XIACHUFANG-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7F4C0215F167E19CB86B621 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A7E933A1D7EE13100C5B9D4 /* Sources */ = {
@@ -622,6 +697,7 @@
 		};
 		2A7E936C1D7EE13200C5B9D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EACB2CC568002C618647A770 /* Pods-LLC_XIACHUFANG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LLC_XIACHUFANG/Info.plist;
@@ -634,6 +710,7 @@
 		};
 		2A7E936D1D7EE13200C5B9D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2704ED2D573B5BB3692D8A1F /* Pods-LLC_XIACHUFANG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LLC_XIACHUFANG/Info.plist;
@@ -711,6 +788,7 @@
 				2A7E936D1D7EE13200C5B9D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A7E936E1D7EE13200C5B9D4 /* Build configuration list for PBXNativeTarget "LLC_XIACHUFANGTests" */ = {
 			isa = XCConfigurationList;
@@ -719,6 +797,7 @@
 				2A7E93701D7EE13200C5B9D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A7E93711D7EE13200C5B9D4 /* Build configuration list for PBXNativeTarget "LLC_XIACHUFANGUITests" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +806,7 @@
 				2A7E93731D7EE13200C5B9D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
