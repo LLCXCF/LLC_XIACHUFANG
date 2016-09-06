@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		2A7E93431D7EE13100C5B9D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E93421D7EE13100C5B9D4 /* main.m */; };
 		2A7E93461D7EE13100C5B9D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E93451D7EE13100C5B9D4 /* AppDelegate.m */; };
-		2A7E93491D7EE13100C5B9D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E93481D7EE13100C5B9D4 /* ViewController.m */; };
-		2A7E934C1D7EE13100C5B9D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E934A1D7EE13100C5B9D4 /* Main.storyboard */; };
 		2A7E934E1D7EE13100C5B9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E934D1D7EE13100C5B9D4 /* Assets.xcassets */; };
 		2A7E93511D7EE13100C5B9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E934F1D7EE13100C5B9D4 /* LaunchScreen.storyboard */; };
 		2A7E935C1D7EE13100C5B9D4 /* LLC_XIACHUFANGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E935B1D7EE13100C5B9D4 /* LLC_XIACHUFANGTests.m */; };
 		2A7E93671D7EE13200C5B9D4 /* LLC_XIACHUFANGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E93661D7EE13200C5B9D4 /* LLC_XIACHUFANGUITests.m */; };
+		2A7E93A01D7EE28C00C5B9D4 /* LLCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E939F1D7EE28C00C5B9D4 /* LLCHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 		2A7E93421D7EE13100C5B9D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A7E93441D7EE13100C5B9D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A7E93451D7EE13100C5B9D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2A7E93471D7EE13100C5B9D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2A7E93481D7EE13100C5B9D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2A7E934B1D7EE13100C5B9D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A7E934D1D7EE13100C5B9D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A7E93501D7EE13100C5B9D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A7E93521D7EE13100C5B9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +47,8 @@
 		2A7E93621D7EE13100C5B9D4 /* LLC_XIACHUFANGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLC_XIACHUFANGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7E93661D7EE13200C5B9D4 /* LLC_XIACHUFANGUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLC_XIACHUFANGUITests.m; sourceTree = "<group>"; };
 		2A7E93681D7EE13200C5B9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A7E939E1D7EE28C00C5B9D4 /* LLCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCHomeViewController.h; sourceTree = "<group>"; };
+		2A7E939F1D7EE28C00C5B9D4 /* LLCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +99,18 @@
 		2A7E93401D7EE13100C5B9D4 /* LLC_XIACHUFANG */ = {
 			isa = PBXGroup;
 			children = (
+				2A7E93741D7EE1AE00C5B9D4 /* Extensions */,
+				2A7E93751D7EE1AE00C5B9D4 /* Frameworks */,
+				2A7E93761D7EE1AE00C5B9D4 /* Global */,
+				2A7E93771D7EE1AE00C5B9D4 /* Model */,
+				2A7E93781D7EE1AE00C5B9D4 /* Module */,
+				2A7E93791D7EE1AE00C5B9D4 /* Operation */,
+				2A7E937A1D7EE1AE00C5B9D4 /* SDK */,
+				2A7E937B1D7EE1AE00C5B9D4 /* Tools */,
+				2A7E937C1D7EE1AE00C5B9D4 /* View */,
+				2A7E938B1D7EE24600C5B9D4 /* ViewControllers */,
 				2A7E93441D7EE13100C5B9D4 /* AppDelegate.h */,
 				2A7E93451D7EE13100C5B9D4 /* AppDelegate.m */,
-				2A7E93471D7EE13100C5B9D4 /* ViewController.h */,
-				2A7E93481D7EE13100C5B9D4 /* ViewController.m */,
-				2A7E934A1D7EE13100C5B9D4 /* Main.storyboard */,
 				2A7E934D1D7EE13100C5B9D4 /* Assets.xcassets */,
 				2A7E934F1D7EE13100C5B9D4 /* LaunchScreen.storyboard */,
 				2A7E93521D7EE13100C5B9D4 /* Info.plist */,
@@ -138,6 +143,222 @@
 				2A7E93681D7EE13200C5B9D4 /* Info.plist */,
 			);
 			path = LLC_XIACHUFANGUITests;
+			sourceTree = "<group>";
+		};
+		2A7E93741D7EE1AE00C5B9D4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2A7E93751D7EE1AE00C5B9D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A7E93761D7EE1AE00C5B9D4 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		2A7E93771D7EE1AE00C5B9D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7E93781D7EE1AE00C5B9D4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		2A7E93791D7EE1AE00C5B9D4 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		2A7E937A1D7EE1AE00C5B9D4 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		2A7E937B1D7EE1AE00C5B9D4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2A7E937C1D7EE1AE00C5B9D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A7E938B1D7EE24600C5B9D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E939C1D7EE24600C5B9D4 /* RootViewController(BASIC) */,
+				2A7E93901D7EE24600C5B9D4 /* HomeViewController(下厨房) */,
+				2A7E938C1D7EE24600C5B9D4 /* FairViewController(市集) */,
+				2A7E93941D7EE24600C5B9D4 /* MailBoxViewController(信箱) */,
+				2A7E93981D7EE24600C5B9D4 /* MeViewController(我) */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2A7E938C1D7EE24600C5B9D4 /* FairViewController(市集) */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E938D1D7EE24600C5B9D4 /* Controller */,
+				2A7E938E1D7EE24600C5B9D4 /* Model */,
+				2A7E938F1D7EE24600C5B9D4 /* View */,
+			);
+			path = "FairViewController(市集)";
+			sourceTree = "<group>";
+		};
+		2A7E938D1D7EE24600C5B9D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A7E938E1D7EE24600C5B9D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7E938F1D7EE24600C5B9D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A7E93901D7EE24600C5B9D4 /* HomeViewController(下厨房) */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E93911D7EE24600C5B9D4 /* Controller */,
+				2A7E93921D7EE24600C5B9D4 /* Model */,
+				2A7E93931D7EE24600C5B9D4 /* View */,
+			);
+			path = "HomeViewController(下厨房)";
+			sourceTree = "<group>";
+		};
+		2A7E93911D7EE24600C5B9D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E939E1D7EE28C00C5B9D4 /* LLCHomeViewController.h */,
+				2A7E939F1D7EE28C00C5B9D4 /* LLCHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A7E93921D7EE24600C5B9D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7E93931D7EE24600C5B9D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A7E93941D7EE24600C5B9D4 /* MailBoxViewController(信箱) */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E93951D7EE24600C5B9D4 /* Controller */,
+				2A7E93961D7EE24600C5B9D4 /* Model */,
+				2A7E93971D7EE24600C5B9D4 /* View */,
+			);
+			path = "MailBoxViewController(信箱)";
+			sourceTree = "<group>";
+		};
+		2A7E93951D7EE24600C5B9D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A7E93961D7EE24600C5B9D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7E93971D7EE24600C5B9D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A7E93981D7EE24600C5B9D4 /* MeViewController(我) */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E93991D7EE24600C5B9D4 /* Controller */,
+				2A7E939A1D7EE24600C5B9D4 /* Model */,
+				2A7E939B1D7EE24600C5B9D4 /* View */,
+			);
+			path = "MeViewController(我)";
+			sourceTree = "<group>";
+		};
+		2A7E93991D7EE24600C5B9D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A7E939A1D7EE24600C5B9D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A7E939B1D7EE24600C5B9D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A7E939C1D7EE24600C5B9D4 /* RootViewController(BASIC) */ = {
+			isa = PBXGroup;
+			children = (
+				2A7E939D1D7EE24600C5B9D4 /* Controller */,
+			);
+			path = "RootViewController(BASIC)";
+			sourceTree = "<group>";
+		};
+		2A7E939D1D7EE24600C5B9D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +423,9 @@
 		2A7E93361D7EE13100C5B9D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LLC;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = chendi;
+				ORGANIZATIONNAME = bbigcd;
 				TargetAttributes = {
 					2A7E933D1D7EE13100C5B9D4 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -245,7 +467,6 @@
 			files = (
 				2A7E93511D7EE13100C5B9D4 /* LaunchScreen.storyboard in Resources */,
 				2A7E934E1D7EE13100C5B9D4 /* Assets.xcassets in Resources */,
-				2A7E934C1D7EE13100C5B9D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +491,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7E93491D7EE13100C5B9D4 /* ViewController.m in Sources */,
 				2A7E93461D7EE13100C5B9D4 /* AppDelegate.m in Sources */,
 				2A7E93431D7EE13100C5B9D4 /* main.m in Sources */,
+				2A7E93A01D7EE28C00C5B9D4 /* LLCHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +529,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2A7E934A1D7EE13100C5B9D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A7E934B1D7EE13100C5B9D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2A7E934F1D7EE13100C5B9D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,6 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LLC_XIACHUFANG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cd.LLC-XIACHUFANG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +637,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LLC_XIACHUFANG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cd.LLC-XIACHUFANG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
