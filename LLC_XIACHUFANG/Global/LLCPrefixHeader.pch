@@ -1,0 +1,30 @@
+//
+//  LLCPrefixHeader.pch
+//  LLC_XIACHUFANG
+//
+//  Created by bigcd on 16/9/11.
+//  Copyright © 2016年 bbigcd. All rights reserved.
+//
+
+#ifndef LLCPrefixHeader_pch
+#define LLCPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIColor+LLCEntension.h"
+
+/**
+ *  屏幕说明:
+ *  拿到手机的型号，判断屏幕的尺寸，根据尺寸适配
+ *     机型            Scale     分辨率      对角线
+ *  iPhone 4(s)         @1x     320*480     3.5  不适配4(s)
+ *  iPhone 5/5c/5s      @2x     320*568     4.0
+ *  iPhone 6/7          @2x     375*667     4.7
+ *  iPhone 6plus/7plus  @2x     414*736     5.5
+ */
+#define cc [UIScreen mainScreen].bounds.size.height
+
+#define LLCColorWithRGB(R,G,B) [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
+
+#endif /* LLCPrefixHeader_pch */

@@ -1,25 +1,23 @@
 //
-//  LLCHomeViewController.m
+//  LLCFairViewController.m
 //  LLC_XIACHUFANG
 //
-//  Created by bbigcd on 16/9/6.
+//  Created by bigcd on 16/9/10.
 //  Copyright © 2016年 bbigcd. All rights reserved.
 //
 
-#import "LLCHomeViewController.h"
+#import "LLCFairViewController.h"
 
-@interface LLCHomeViewController ()
+@interface LLCFairViewController ()
 
 @end
 
-@implementation LLCHomeViewController
+@implementation LLCFairViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:[UIColor whiteColor]];
-//    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
-//    self.navigationItem.titleView = searchBar;
 }
 
 - (void)didReceiveMemoryWarning {
