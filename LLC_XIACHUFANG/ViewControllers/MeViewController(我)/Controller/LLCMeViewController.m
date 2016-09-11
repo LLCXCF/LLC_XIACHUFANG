@@ -24,10 +24,27 @@
 
 - (void)setupNavigationBarItem
 {
+    UIBarButtonItem *addFriendItem = [UIBarButtonItem itemWithImage:@"navFindFriendsImage" target:self action:@selector(rightBarButtonItemLeft)];
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"rightPageSetting" target:self action:@selector(rightBarButtonItemsRight)];
+    self.navigationItem.rightBarButtonItems = @[settingItem, addFriendItem];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"homepageCreateRecipeButton" target:self action:@selector(leftBarButtonItem)];
+}
+
+#pragma mark -- UIBarButtonItem -- action
+
+- (void)leftBarButtonItem
+{
+    NSLog(@"...");
+}
+
+- (void)rightBarButtonItemLeft
+{
     
 }
 
-
-
+- (void)rightBarButtonItemsRight
+{
+    
+}
 
 @end

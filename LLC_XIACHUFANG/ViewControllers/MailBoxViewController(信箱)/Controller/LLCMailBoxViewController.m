@@ -17,10 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"信箱";
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setupNavigationBarItem];
 }
 
 - (void)setupNavigationBarItem
+{
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"homepageCreateRecipeButton" target:self action:@selector(leftBarButtonItemClick)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"homepageCreateRecipeButton" target:self action:@selector(rightBarButtonItemClick)];
+}
+
+#pragma mark -- UIBarButtonItem -- action
+
+- (void)leftBarButtonItemClick
+{
+    
+}
+
+- (void)rightBarButtonItemClick
 {
     
 }

@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		290E39C11D7F15D20086F77E /* UIView+LLCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E39C01D7F15D20086F77E /* UIView+LLCExtension.m */; };
 		29864F791D83AF0B008E0CC4 /* LLCTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29864F781D83AF0B008E0CC4 /* LLCTabBarViewController.m */; };
 		29864F7C1D83B550008E0CC4 /* LLCFairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29864F7B1D83B550008E0CC4 /* LLCFairViewController.m */; };
 		29864F7F1D83B5C4008E0CC4 /* LLCMailBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29864F7E1D83B5C4008E0CC4 /* LLCMailBoxViewController.m */; };
 		29864F821D83B5CF008E0CC4 /* LLCMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29864F811D83B5CF008E0CC4 /* LLCMeViewController.m */; };
-		298DB3581D853C74009827E2 /* UIColor+LLCEntension.m in Sources */ = {isa = PBXBuildFile; fileRef = 298DB3571D853C74009827E2 /* UIColor+LLCEntension.m */; };
+		29F2C3BA1D85A8A700CC06B8 /* LLCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2C3B91D85A8A700CC06B8 /* LLCConst.m */; };
+		29F2C3BE1D85A8CE00CC06B8 /* CDConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2C3BD1D85A8CE00CC06B8 /* CDConst.m */; };
+		29F2C3C61D85ABC800CC06B8 /* UIBarButtonItem+LLCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2C3C51D85ABC800CC06B8 /* UIBarButtonItem+LLCCategory.m */; };
+		29F2C3C91D85ABEE00CC06B8 /* UIColor+LLCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2C3C81D85ABEE00CC06B8 /* UIColor+LLCCategory.m */; };
+		29F2C3CC1D85ABFA00CC06B8 /* UIView+LLCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2C3CB1D85ABFA00CC06B8 /* UIView+LLCCategory.m */; };
 		2A7E93431D7EE13100C5B9D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E93421D7EE13100C5B9D4 /* main.m */; };
 		2A7E93461D7EE13100C5B9D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E93451D7EE13100C5B9D4 /* AppDelegate.m */; };
 		2A7E934E1D7EE13100C5B9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7E934D1D7EE13100C5B9D4 /* Assets.xcassets */; };
@@ -42,8 +45,6 @@
 
 /* Begin PBXFileReference section */
 		2704ED2D573B5BB3692D8A1F /* Pods-LLC_XIACHUFANG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLC_XIACHUFANG.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLC_XIACHUFANG/Pods-LLC_XIACHUFANG.release.xcconfig"; sourceTree = "<group>"; };
-		290E39BF1D7F15D20086F77E /* UIView+LLCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LLCExtension.h"; sourceTree = "<group>"; };
-		290E39C01D7F15D20086F77E /* UIView+LLCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LLCExtension.m"; sourceTree = "<group>"; };
 		29864F771D83AF0B008E0CC4 /* LLCTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCTabBarViewController.h; sourceTree = "<group>"; };
 		29864F781D83AF0B008E0CC4 /* LLCTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCTabBarViewController.m; sourceTree = "<group>"; };
 		29864F7A1D83B550008E0CC4 /* LLCFairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCFairViewController.h; sourceTree = "<group>"; };
@@ -52,9 +53,17 @@
 		29864F7E1D83B5C4008E0CC4 /* LLCMailBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCMailBoxViewController.m; sourceTree = "<group>"; };
 		29864F801D83B5CF008E0CC4 /* LLCMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCMeViewController.h; sourceTree = "<group>"; };
 		29864F811D83B5CF008E0CC4 /* LLCMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCMeViewController.m; sourceTree = "<group>"; };
-		298DB3561D853C74009827E2 /* UIColor+LLCEntension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LLCEntension.h"; sourceTree = "<group>"; };
-		298DB3571D853C74009827E2 /* UIColor+LLCEntension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LLCEntension.m"; sourceTree = "<group>"; };
 		298DB3591D853D0E009827E2 /* LLCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLCPrefixHeader.pch; sourceTree = "<group>"; };
+		29F2C3B91D85A8A700CC06B8 /* LLCConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCConst.m; sourceTree = "<group>"; };
+		29F2C3BB1D85A8B900CC06B8 /* LLCConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLCConst.h; sourceTree = "<group>"; };
+		29F2C3BC1D85A8CE00CC06B8 /* CDConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConst.h; sourceTree = "<group>"; };
+		29F2C3BD1D85A8CE00CC06B8 /* CDConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDConst.m; sourceTree = "<group>"; };
+		29F2C3C41D85ABC800CC06B8 /* UIBarButtonItem+LLCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LLCCategory.h"; sourceTree = "<group>"; };
+		29F2C3C51D85ABC800CC06B8 /* UIBarButtonItem+LLCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LLCCategory.m"; sourceTree = "<group>"; };
+		29F2C3C71D85ABEE00CC06B8 /* UIColor+LLCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LLCCategory.h"; sourceTree = "<group>"; };
+		29F2C3C81D85ABEE00CC06B8 /* UIColor+LLCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LLCCategory.m"; sourceTree = "<group>"; };
+		29F2C3CA1D85ABFA00CC06B8 /* UIView+LLCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LLCCategory.h"; sourceTree = "<group>"; };
+		29F2C3CB1D85ABFA00CC06B8 /* UIView+LLCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LLCCategory.m"; sourceTree = "<group>"; };
 		2A7E933E1D7EE13100C5B9D4 /* LLC_XIACHUFANG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLC_XIACHUFANG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7E93421D7EE13100C5B9D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A7E93441D7EE13100C5B9D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -208,10 +217,12 @@
 		2A7E93741D7EE1AE00C5B9D4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				290E39BF1D7F15D20086F77E /* UIView+LLCExtension.h */,
-				290E39C01D7F15D20086F77E /* UIView+LLCExtension.m */,
-				298DB3561D853C74009827E2 /* UIColor+LLCEntension.h */,
-				298DB3571D853C74009827E2 /* UIColor+LLCEntension.m */,
+				29F2C3CA1D85ABFA00CC06B8 /* UIView+LLCCategory.h */,
+				29F2C3CB1D85ABFA00CC06B8 /* UIView+LLCCategory.m */,
+				29F2C3C71D85ABEE00CC06B8 /* UIColor+LLCCategory.h */,
+				29F2C3C81D85ABEE00CC06B8 /* UIColor+LLCCategory.m */,
+				29F2C3C41D85ABC800CC06B8 /* UIBarButtonItem+LLCCategory.h */,
+				29F2C3C51D85ABC800CC06B8 /* UIBarButtonItem+LLCCategory.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,7 +237,11 @@
 		2A7E93761D7EE1AE00C5B9D4 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				29F2C3BC1D85A8CE00CC06B8 /* CDConst.h */,
+				29F2C3BD1D85A8CE00CC06B8 /* CDConst.m */,
 				298DB3591D853D0E009827E2 /* LLCPrefixHeader.pch */,
+				29F2C3BB1D85A8B900CC06B8 /* LLCConst.h */,
+				29F2C3B91D85A8A700CC06B8 /* LLCConst.m */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -599,13 +614,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				29864F7C1D83B550008E0CC4 /* LLCFairViewController.m in Sources */,
-				290E39C11D7F15D20086F77E /* UIView+LLCExtension.m in Sources */,
+				29F2C3C91D85ABEE00CC06B8 /* UIColor+LLCCategory.m in Sources */,
+				29F2C3CC1D85ABFA00CC06B8 /* UIView+LLCCategory.m in Sources */,
+				29F2C3C61D85ABC800CC06B8 /* UIBarButtonItem+LLCCategory.m in Sources */,
+				29F2C3BA1D85A8A700CC06B8 /* LLCConst.m in Sources */,
 				29864F7F1D83B5C4008E0CC4 /* LLCMailBoxViewController.m in Sources */,
 				2A7E93461D7EE13100C5B9D4 /* AppDelegate.m in Sources */,
 				29864F821D83B5CF008E0CC4 /* LLCMeViewController.m in Sources */,
 				29864F791D83AF0B008E0CC4 /* LLCTabBarViewController.m in Sources */,
-				298DB3581D853C74009827E2 /* UIColor+LLCEntension.m in Sources */,
 				2A7E93431D7EE13100C5B9D4 /* main.m in Sources */,
+				29F2C3BE1D85A8CE00CC06B8 /* CDConst.m in Sources */,
 				2A7E93A01D7EE28C00C5B9D4 /* LLCHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

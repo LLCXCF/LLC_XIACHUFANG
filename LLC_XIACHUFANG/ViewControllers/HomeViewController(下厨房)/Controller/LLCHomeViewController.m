@@ -18,23 +18,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:[UIColor whiteColor]];
-//    UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
-//    self.navigationItem.titleView = searchBar;
+    [self setupNavigationBarItem];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupNavigationBarItem
+{
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"homepageCreateRecipeButton" target:self action:@selector(leftBarButtonItemClick)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"buylistButtonImage" target:self action:@selector(rightBarButtonItemClick)];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark -- UIBarButtonItem -- action
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)leftBarButtonItemClick
+{
+    
 }
-*/
+
+- (void)rightBarButtonItemClick
+{
+    
+}
 
 @end

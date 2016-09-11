@@ -1,14 +1,14 @@
 //
-//  UIView+LLCExtension.m
+//  UIView+LLCCategory.m
 //  LLC_XIACHUFANG
 //
-//  Created by bigcd on 16/9/6.
+//  Created by bigcd on 16/9/11.
 //  Copyright © 2016年 bbigcd. All rights reserved.
 //
 
-#import "UIView+LLCExtension.h"
+#import "UIView+LLCCategory.h"
 
-@implementation UIView (LLCExtension)
+@implementation UIView (LLCCategory)
 - (void)setSize:(CGSize)size
 {
     CGRect frame = self.frame;

@@ -12,7 +12,9 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-#import "UIColor+LLCEntension.h"
+#import "UIView+LLCCategory.h"
+#import "UIColor+LLCCategory.h"
+#import "UIBarButtonItem+LLCCategory.h"
 
 /**
  *  屏幕说明:
@@ -23,8 +25,17 @@
  *  iPhone 6/7          @2x     375*667     4.7
  *  iPhone 6plus/7plus  @2x     414*736     5.5
  */
-#define cc [UIScreen mainScreen].bounds.size.height
+#define is4_0Screen [UIScreen mainScreen].bounds.size.height
 
 #define LLCColorWithRGB(R,G,B) [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
+
+
+
+
+
+
+
+
+
 
 #endif /* LLCPrefixHeader_pch */

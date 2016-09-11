@@ -1,5 +1,5 @@
 //
-//  UIColor+LLCEntension.h
+//  UIColor+LLCCategory.h
 //  LLC_XIACHUFANG
 //
 //  Created by bigcd on 16/9/11.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (LLCEntension)
+@interface UIColor (LLCCategory)
 /*
  *  @return 底部tabBar被选中颜色
  */
