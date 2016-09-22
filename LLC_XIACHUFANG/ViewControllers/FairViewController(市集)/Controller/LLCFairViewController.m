@@ -19,15 +19,25 @@
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setupNavigationBarItem];
+    [self setupWebView];
 }
-
+#pragma mark --UIViewController--
 - (void)setupNavigationBarItem
 {
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"homepageCreateRecipeButton" target:self action:@selector(leftBarButtonItemClick)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"homepageCreateRecipeButton" target:self action:@selector(rightBarButtonItemClick)];
 }
 
-#pragma mark -- UIBarButtonItem -- action
+- (void)setupWebView
+{
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:webView];
+    NSURL *url = [NSURL URLWithString:@"http://www.xiachufang.com/page/ec-tab/"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+}
+
+#pragma mark --UIBarButtonItem-- action
 
 - (void)leftBarButtonItemClick
 {
