@@ -23,6 +23,10 @@
 		2A7E935C1D7EE13100C5B9D4 /* LLC_XIACHUFANGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E935B1D7EE13100C5B9D4 /* LLC_XIACHUFANGTests.m */; };
 		2A7E93671D7EE13200C5B9D4 /* LLC_XIACHUFANGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E93661D7EE13200C5B9D4 /* LLC_XIACHUFANGUITests.m */; };
 		2A7E93A01D7EE28C00C5B9D4 /* LLCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7E939F1D7EE28C00C5B9D4 /* LLCHomeViewController.m */; };
+		9232ACD71D8EBFC000C8BE5A /* LLCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9232ACD61D8EBFC000C8BE5A /* LLCHeaderView.m */; };
+		9232ACD91D8EBFE900C8BE5A /* LLCHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9232ACD81D8EBFE900C8BE5A /* LLCHeaderView.xib */; };
+		927F3D991D94201000518BE5 /* LLCCreateMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927F3D981D94201000518BE5 /* LLCCreateMenuViewController.m */; };
+		92F799861D91815D00C10FCF /* LLCOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F799851D91815D00C10FCF /* LLCOneTableViewCell.m */; };
 		BDDA43685E9391B286D0D662 /* libPods-LLC_XIACHUFANG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 683DE626F28A421894D941C1 /* libPods-LLC_XIACHUFANG.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +84,13 @@
 		2A7E939E1D7EE28C00C5B9D4 /* LLCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCHomeViewController.h; sourceTree = "<group>"; };
 		2A7E939F1D7EE28C00C5B9D4 /* LLCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCHomeViewController.m; sourceTree = "<group>"; };
 		683DE626F28A421894D941C1 /* libPods-LLC_XIACHUFANG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLC_XIACHUFANG.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9232ACD51D8EBFC000C8BE5A /* LLCHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCHeaderView.h; sourceTree = "<group>"; };
+		9232ACD61D8EBFC000C8BE5A /* LLCHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCHeaderView.m; sourceTree = "<group>"; };
+		9232ACD81D8EBFE900C8BE5A /* LLCHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LLCHeaderView.xib; sourceTree = "<group>"; };
+		927F3D971D94200F00518BE5 /* LLCCreateMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCCreateMenuViewController.h; sourceTree = "<group>"; };
+		927F3D981D94201000518BE5 /* LLCCreateMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCCreateMenuViewController.m; sourceTree = "<group>"; };
+		92F799841D91815D00C10FCF /* LLCOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCOneTableViewCell.h; sourceTree = "<group>"; };
+		92F799851D91815D00C10FCF /* LLCOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCOneTableViewCell.m; sourceTree = "<group>"; };
 		EACB2CC568002C618647A770 /* Pods-LLC_XIACHUFANG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLC_XIACHUFANG.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLC_XIACHUFANG/Pods-LLC_XIACHUFANG.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -402,9 +413,9 @@
 		2A7E93981D7EE24600C5B9D4 /* MeViewController(我) */ = {
 			isa = PBXGroup;
 			children = (
+				9232ACD41D8EBFB200C8BE5A /* View */,
 				2A7E93991D7EE24600C5B9D4 /* Controller */,
 				2A7E939A1D7EE24600C5B9D4 /* Model */,
-				2A7E939B1D7EE24600C5B9D4 /* View */,
 			);
 			path = "MeViewController(我)";
 			sourceTree = "<group>";
@@ -414,6 +425,8 @@
 			children = (
 				29864F801D83B5CF008E0CC4 /* LLCMeViewController.h */,
 				29864F811D83B5CF008E0CC4 /* LLCMeViewController.m */,
+				927F3D971D94200F00518BE5 /* LLCCreateMenuViewController.h */,
+				927F3D981D94201000518BE5 /* LLCCreateMenuViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -425,9 +438,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		2A7E939B1D7EE24600C5B9D4 /* View */ = {
+		9232ACD41D8EBFB200C8BE5A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9232ACD51D8EBFC000C8BE5A /* LLCHeaderView.h */,
+				9232ACD61D8EBFC000C8BE5A /* LLCHeaderView.m */,
+				9232ACD81D8EBFE900C8BE5A /* LLCHeaderView.xib */,
+				92F799841D91815D00C10FCF /* LLCOneTableViewCell.h */,
+				92F799851D91815D00C10FCF /* LLCOneTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -541,6 +559,7 @@
 			files = (
 				2A7E93511D7EE13100C5B9D4 /* LaunchScreen.storyboard in Resources */,
 				2A7E934E1D7EE13100C5B9D4 /* Assets.xcassets in Resources */,
+				9232ACD91D8EBFE900C8BE5A /* LLCHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,9 +633,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				29864F7C1D83B550008E0CC4 /* LLCFairViewController.m in Sources */,
+				927F3D991D94201000518BE5 /* LLCCreateMenuViewController.m in Sources */,
 				29F2C3C91D85ABEE00CC06B8 /* UIColor+LLCCategory.m in Sources */,
 				29F2C3CC1D85ABFA00CC06B8 /* UIView+LLCCategory.m in Sources */,
 				29F2C3C61D85ABC800CC06B8 /* UIBarButtonItem+LLCCategory.m in Sources */,
+				92F799861D91815D00C10FCF /* LLCOneTableViewCell.m in Sources */,
 				29F2C3BA1D85A8A700CC06B8 /* LLCConst.m in Sources */,
 				29864F7F1D83B5C4008E0CC4 /* LLCMailBoxViewController.m in Sources */,
 				2A7E93461D7EE13100C5B9D4 /* AppDelegate.m in Sources */,
@@ -625,6 +646,7 @@
 				2A7E93431D7EE13100C5B9D4 /* main.m in Sources */,
 				29F2C3BE1D85A8CE00CC06B8 /* CDConst.m in Sources */,
 				2A7E93A01D7EE28C00C5B9D4 /* LLCHomeViewController.m in Sources */,
+				9232ACD71D8EBFC000C8BE5A /* LLCHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,7 +779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PREFIX_HEADER = /Users/bbigcd/Desktop/LLC_XIACHUFANG/LLC_XIACHUFANG/Global/LLCPrefixHeader.pch;
+				GCC_PREFIX_HEADER = LLC_XIACHUFANG/Global/LLCPrefixHeader.pch;
 				INFOPLIST_FILE = LLC_XIACHUFANG/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -772,7 +794,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PREFIX_HEADER = /Users/bbigcd/Desktop/LLC_XIACHUFANG/LLC_XIACHUFANG/Global/LLCPrefixHeader.pch;
+				GCC_PREFIX_HEADER = LLC_XIACHUFANG/Global/LLCPrefixHeader.pch;
 				INFOPLIST_FILE = LLC_XIACHUFANG/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -10,12 +10,40 @@
 
 @implementation LLCHeaderView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self = [[NSBundle mainBundle] loadNibNamed:@"LLCHeaderView" owner:self options:nil].firstObject;
+        self.frame = CGRectMake(0, 0, KSCREENWIDTH, 210);
+        [self setupInitDealWithUILayout];
+    }
+    return self;
 }
-*/
+
+- (void)setupInitDealWithUILayout
+{
+    self.headerImgView.layer.cornerRadius  = 50;
+    self.headerImgView.layer.masksToBounds = YES;
+    [self.bandagePhoneButton addTarget:self action:@selector(bandagePhoneButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.meAttentionBtn addTarget:self action:@selector(meAttentionButtonClick) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)bandagePhoneButtonClick
+{
+    if ([self.delegate respondsToSelector:@selector(bandagePhoneButtonBeClick)]) {
+        
+        [self.delegate bandagePhoneButtonBeClick];
+    }
+}
+
+- (void)meAttentionButtonClick
+{
+    if ([self.delegate respondsToSelector:@selector(meAttentionButtonBeClick)]) {
+        [self.delegate meAttentionButtonBeClick];
+    }
+}
+
 
 @end

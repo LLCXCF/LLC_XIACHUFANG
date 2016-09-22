@@ -15,6 +15,7 @@
 #import "UIView+LLCCategory.h"
 #import "UIColor+LLCCategory.h"
 #import "UIBarButtonItem+LLCCategory.h"
+#import "Masonry.h"
 
 /**
  *  屏幕说明:
@@ -26,6 +27,9 @@
  *  iPhone 6plus/7plus  @2x     414*736     5.5
  */
 #define is4_0Screen [UIScreen mainScreen].bounds.size.height
+
+#define KSCREENWIDTH  [UIScreen mainScreen].bounds.size.width
+#define kSCREENHEIGHT [UIScreen mainScreen].bounds.size.height
 
 #define LLCColorWithRGB(R,G,B) [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
 

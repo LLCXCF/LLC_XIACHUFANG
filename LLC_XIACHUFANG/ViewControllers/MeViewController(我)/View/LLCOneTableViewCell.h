@@ -8,6 +8,30 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LLCOneTableViewCellDelegeta <NSObject>
+
+- (void)CollectionViewTapClick;
+
+- (void)OrderViewTapClick;
+
+- (void)PreferentialViewTapClick;
+
+- (void)IntegralViewTapClick;
+
+
+@end
+
+
 @interface LLCOneTableViewCell : UITableViewCell
+
+@property(nonatomic, strong) UIView *collectionView;
+
+@property(nonatomic, strong) UIView *orderView;
+
+@property(nonatomic, strong) UIView *preferentialView;
+
+@property(nonatomic, strong) UIView *integralView;
+
+@property(nonatomic, weak) id<LLCOneTableViewCellDelegeta> delegate;
 
 @end
